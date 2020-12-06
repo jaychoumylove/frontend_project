@@ -1,0 +1,329 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+	<meta http-equiv="Content-Type" content="text/x-component" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<link rel="icon" href="favicon.ico" mce_href="favicon.ico" type="image/x-icon"/>
+    <link rel="stylesheet" type="text/css" href="css/trip.css"/>
+    <script type="text/javascript" src="js/jquery-1.8.3.min.js"></script>
+    <script type="text/javascript" src="js/cycle.js"></script>
+	<title>推荐品牌</title>
+</head>
+<body style="background:#fafafa;">
+	 <!--第一种头部 start-->
+      <div id="head"></div>
+      <!--第一种头部 end-->   
+      
+      <!--banner start-->
+      <div class="idx_ban">
+      	  <!--预订类型 start-->
+      	  <div class="idx_b01">
+      	  	<div class="idx_b01_left">
+      	  	   <ul class="idx_b01_nav clearfix">
+      	  	   	<li class="act">住宿预订</li>
+      	  	   	<li>宴席预订</li>
+      	  	   </ul>
+      	  	   <div class="idx_b01_cont">
+      	  	   		<div class="idx_b01_box">
+      	  	   			<dl class="idx_b01_dl clearfix">
+      	  	   				<dt class="idx_b01_tit">目的地</dt>
+      	  	   				<dd class="idx_b01_msg idx_b01_msg02">
+      	  	   					<input  class="idx_b01_text" readonly="readonly" type="text" name="" id="" value ='长沙' onfocus="if (value =='长沙'){value =''}"onblur="if (value ==''){value='长沙'}" />
+      	  	   					<div class="window_div"></div>
+      	  	   				</dd>
+      	  	   			</dl>
+      	  	   			<dl class="idx_b01_dl clearfix">
+      	  	   				<dt class="idx_b01_tit">入住日期</dt>
+      	  	   				<dd class="idx_b01_msg">
+      	  	   					<input  class="idx_b01_text idx_b02_text" readonly="readonly" type="text" name="" id="calendar" value="2017-01-01" />
+      	  	   					<span class="date_span"><i class="idx_b01_date"></i></span>
+      	  	   				</dd>
+      	  	   			</dl>
+      	  	   			<dl class="idx_b01_dl clearfix">
+      	  	   				<dt class="idx_b01_tit">退房日期</dt>
+      	  	   				<dd class="idx_b01_msg">
+      	  	   					<input  class="idx_b01_text idx_b02_text" type="text" readonly="readonly" name="" id="calendar02" value="2017-01-02" />
+      	  	   					<span class="date_span"><i class="idx_b01_date"></i></span>
+      	  	   				</dd>
+      	  	   			</dl>
+      	  	   			<dl class="idx_b01_dl clearfix">
+      	  	   				<dt class="idx_b01_tit">关键词</dt>
+      	  	   				<dd class="idx_b01_msg idx_b01_msg02">
+      	  	   					<input class="idx_b01_text" readonly="readonly" type="text" value="酒店名/位置/品牌" onfocus="if (value =='酒店名/位置/品牌'){value =''}"onblur="if (value ==''){value='酒店名/位置/品牌'}">
+      	  	   				    <div class="window_div"></div>
+      	  	   				</dd>
+      	  	   			</dl>
+      	  	   			<a class="idx_b01_search" href=""><i class="search_icon"></i>搜索</a>
+      	  	   		</div>
+      	  	   		<div class="idx_b01_box">
+      	  	   			<dl class="idx_b01_dl clearfix">
+      	  	   				<dt class="idx_b01_tit">举办地</dt>
+      	  	   				<dd class="idx_b01_msg idx_b01_msg02">
+      	  	   					<input  class="idx_b01_text" readonly="readonly" type="text" name="" id="" value ='长沙' onfocus="if (value =='长沙'){value =''}"onblur="if (value ==''){value='长沙'}"/>
+      	  	   					<div class="window_div"></div>
+      	  	   				</dd>
+      	  	   			</dl>
+      	  	   			<dl class="idx_b01_dl clearfix">
+      	  	   				<dt class="idx_b01_tit">类型</dt>
+      	  	   				<dd class="idx_b01_msg">
+      	  	   					<div class="drop"> 
+									<input class="input_select" type="text" value="婚宴"/> 
+									<img src="images/head/select_down.png" class="">
+									<ul> 
+										<li><a>生日宴</a></li> 
+										<li><a>朋友宴</a></li> 
+									</ul> 
+								</div> 
+      	  	   				</dd>
+      	  	   			</dl>
+      	  	   			<dl class="idx_b01_dl clearfix">
+      	  	   				<dt class="idx_b01_tit">宴席日期</dt>
+      	  	   				<dd class="idx_b01_msg">
+      	  	   					<input  class="idx_b01_text idx_b02_text" readonly="readonly" type="text" name="" id="calendar03" value="2017-01-02" />
+      	  	   					<span class="date_span"><i class="idx_b01_date"></i></span>
+      	  	   				</dd>
+      	  	   			</dl>
+      	  	   			<dl class="idx_b01_dl clearfix">
+      	  	   				<dt class="idx_b01_tit">桌数</dt>
+      	  	   				<dd class="idx_b01_msg">
+      	  	   					<div class="drop"> 
+									<input class="input_select" type="text" value="不限"/> 
+									<img src="images/head/select_down.png" class="">
+									<ul> 
+										<li><a>8桌</a></li> 
+										<li><a>18桌</a></li>
+										<li><a>28桌</a></li> 
+									</ul> 
+								</div> 
+      	  	   				</dd>
+      	  	   			</dl>
+      	  	   			<dl class="idx_b01_dl clearfix">
+      	  	   				<dt class="idx_b01_tit">关键词</dt>
+      	  	   				<dd class="idx_b01_msg idx_b01_msg02">
+      	  	   					<input class="idx_b01_text" readonly="readonly" type="text" value="酒店名/位置/品牌" onfocus="if (value =='酒店名/位置/品牌'){value =''}"onblur="if (value ==''){value='酒店名/位置/品牌'}">
+      	  	   				    <div class="window_div"></div>
+      	  	   				</dd>
+      	  	   			</dl>
+      	  	   			<a class="idx_b01_search" href=""><i class="search_icon"></i>搜索</a>
+      	  	   		</div>
+      	  	   </div>
+      	  	</div>   
+      	    <div class="front-banner-nav"  style="z-index:7;"></div>
+      	  </div>
+      	  <!--预订类型 end-->
+      	  <!--轮播 start-->
+      	  <div class="idx_play">
+      	  	 <div class="front-banner">
+		            <ul>
+		                <li><a href="#" target="_blank">
+		                    <img src="images/banner.jpg" alt="banner"/>
+		                </a></li>
+		                <li><a href="#" target="_blank">
+		                    <img src="images/banner2.jpg" alt="banner"/>
+		                </a></li>
+		                <li><a href="#" target="_blank">
+		                    <img src="images/banner3.jpg" alt="banner"/>
+		                </a></li>
+		            </ul>
+		    </div>
+      	  </div>
+      	  <!--轮播 end-->
+      </div>
+      <!--banner end-->
+      
+      
+
+      <!--推荐品牌 start-->
+      <div class="zf_tit09">
+           <p><img src="images/jdicon.png" alt="推荐品牌">推荐品牌</p>
+           <span>众多知名品牌酒店，服务品质有保障！</span>
+           <div class="zf_btn0310 clearfix">
+                <input type="text" value="请输入搜索内容" onfocus="if (value =='请输入搜索内容'){value =''}"onblur="if (value ==''){value='请输入搜索内容'}">
+                <span><img src="images/search.png" alt="搜索"></span>
+           </div>
+       </div>
+       <div class="tjpp clearfix">
+       	   <div class="tjpp_box">
+       	   	   <img src="images/pp01.png" alt="洲际酒店集团">
+       	   	   <p>洲际酒店集团</p>
+       	   </div>
+       	   <div class="tjpp_box">
+       	   	   <img src="images/pp02.png" alt="万豪酒店集团">
+       	   	   <p>万豪酒店集团</p>
+       	   </div>
+       	   <div class="tjpp_box">
+       	   	   <img src="images/pp03.png" alt="如家">
+       	   	   <p>如家</p>
+       	   </div>
+       	   <div class="tjpp_box">
+       	   	   <img src="images/pp04.png" alt="7天">
+       	   	   <p>7天</p>
+       	   </div>
+       	   <div class="tjpp_box">
+       	   	   <img src="images/pp05.png" alt="大中华">
+       	   	   <p>大中华</p>
+       	   </div>
+       	   <div class="tjpp_box">
+       	   	   <img src="images/pp06.png" alt="希尔顿">
+       	   	   <p>希尔顿</p>
+       	   </div>
+       	   <div class="tjpp_box">
+       	   	   <img src="images/pp07.png" alt="金陵连锁">
+       	   	   <p>金陵连锁</p>
+       	   </div>
+       	   <div class="tjpp_box">
+       	   	   <img src="images/pp08.png" alt="莫泰">
+       	   	   <p>莫泰</p>
+       	   </div>
+       	   <div class="tjpp_box">
+       	   	   <img src="images/pp09.png" alt="喜达屋酒店集团">
+       	   	   <p>喜达屋酒店集团</p>
+       	   </div>
+       	   <div class="tjpp_box">
+       	   	   <img src="images/pp10.png" alt="凯悦酒店集团">
+       	   	   <p>凯悦酒店集团</p>
+       	   </div>
+       	   <div class="tjpp_box">
+       	   	   <img src="images/pp11.png" alt="汉庭">
+       	   	   <p>汉庭</p>
+       	   </div>
+       	   <div class="tjpp_box">
+       	   	   <img src="images/pp12.png" alt="锦江之星">
+       	   	   <p>锦江之星</p>
+       	   </div>
+       	   <div class="tjpp_box">
+       	   	   <img src="images/pp13.png" alt="香格里拉">
+       	   	   <p>香格里拉</p>
+       	   </div>
+       	   <div class="tjpp_box">
+       	   	   <img src="images/pp14.png" alt="雅诗阁">
+       	   	   <p>雅诗阁</p>
+       	   </div>
+       	   <div class="tjpp_box">
+       	   	   <img src="images/pp15.png" alt="碧桂园">
+       	   	   <p>碧桂园</p>
+       	   </div>
+       	   <div class="tjpp_box">
+       	   	   <img src="images/pp16.png" alt="格林豪泰">
+       	   	   <p>格林豪泰</p>
+       	   </div>
+       </div>
+      
+      	<div class="tjpp clearfix">
+       	   <div class="tjpp_box">
+       	   	   <img src="images/pp01.png" alt="洲际酒店集团">
+       	   	   <p>洲际酒店集团</p>
+       	   </div>
+       	   <div class="tjpp_box">
+       	   	   <img src="images/pp02.png" alt="万豪酒店集团">
+       	   	   <p>万豪酒店集团</p>
+       	   </div>
+       	   <div class="tjpp_box">
+       	   	   <img src="images/pp03.png" alt="如家">
+       	   	   <p>如家</p>
+       	   </div>
+       	   <div class="tjpp_box">
+       	   	   <img src="images/pp04.png" alt="7天">
+       	   	   <p>7天</p>
+       	   </div>
+       	   <div class="tjpp_box">
+       	   	   <img src="images/pp05.png" alt="大中华">
+       	   	   <p>大中华</p>
+       	   </div>
+       	   <div class="tjpp_box">
+       	   	   <img src="images/pp06.png" alt="希尔顿">
+       	   	   <p>希尔顿</p>
+       	   </div>
+       	   <div class="tjpp_box">
+       	   	   <img src="images/pp07.png" alt="金陵连锁">
+       	   	   <p>金陵连锁</p>
+       	   </div>
+       	   <div class="tjpp_box">
+       	   	   <img src="images/pp08.png" alt="莫泰">
+       	   	   <p>莫泰</p>
+       	   </div>
+       	   <div class="tjpp_box">
+       	   	   <img src="images/pp09.png" alt="喜达屋酒店集团">
+       	   	   <p>喜达屋酒店集团</p>
+       	   </div>
+       	   <div class="tjpp_box">
+       	   	   <img src="images/pp10.png" alt="凯悦酒店集团">
+       	   	   <p>凯悦酒店集团</p>
+       	   </div>
+       	   <div class="tjpp_box">
+       	   	   <img src="images/pp11.png" alt="汉庭">
+       	   	   <p>汉庭</p>
+       	   </div>
+       	   <div class="tjpp_box">
+       	   	   <img src="images/pp12.png" alt="锦江之星">
+       	   	   <p>锦江之星</p>
+       	   </div>
+       	   <div class="tjpp_box">
+       	   	   <img src="images/pp13.png" alt="香格里拉">
+       	   	   <p>香格里拉</p>
+       	   </div>
+       	   <div class="tjpp_box">
+       	   	   <img src="images/pp14.png" alt="雅诗阁">
+       	   	   <p>雅诗阁</p>
+       	   </div>
+       	   <div class="tjpp_box">
+       	   	   <img src="images/pp15.png" alt="碧桂园">
+       	   	   <p>碧桂园</p>
+       	   </div>
+       	   <div class="tjpp_box">
+       	   	   <img src="images/pp16.png" alt="格林豪泰">
+       	   	   <p>格林豪泰</p>
+       	   </div>
+       </div>
+      
+      <!--推荐品牌 end-->
+      
+      <div class="zf_page01">
+           <ul class="zf_page0222_ul clearfix">
+                <li class="zf_page0222_prev"><a href="#">&lt;</a></li>
+                <li><a href="#">1</a></li>
+                <li class="zf_page0222_on"><a href="#">2</a></li>
+                <li class="zf_page0222_none"><a href="#">...</a></li>
+                <li><a href="#">8</a></li>
+                <li class="zf_page0222_next"><a href="#">&gt;</a></li>
+            </ul>
+       </div>
+      
+    
+       <!--底部 start-->
+       <div id="foot"></div>
+       <!--底部 end-->
+       
+       <!--右侧悬浮 start-->
+       <div id="myR"></div>
+       <!--右侧悬浮 end-->
+        
+      <script type="text/javascript" src="js/trip.js"></script>
+      <!--日历插件 start-->
+      <script type="text/javascript" src="js/cQuery_110421.js"></script>
+     <script type="text/javascript" src="js/calendar.js"></script>
+      <script>
+      function rili(a){
+      	$(a).regMod("calendar","6.0", {
+				options: {
+				autoShow: !1,
+				showWeek: !0,
+				maxDate: function() {
+					var a = (new Date).addYears(1);
+					return a.getFullYear() + "-" + (a.getMonth() + 1) + "-" + a.getDate()
+				}()
+			   },
+			   listeners:{
+							   onBeforeShow: function() {},
+							   onChange: function() {}
+			              }
+			  })
+      }
+      rili("#calendar");
+	  rili("#calendar02"); 
+	  rili("#calendar03");    
+      </script>
+      <!--日历插件 end-->
+</body>
+</html>

@@ -1,0 +1,142 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="UTF-8"/>
+<meta http-equiv="Cache-Control" content="no-cache"/>
+<meta content="telephone=no" name="format-detection" />
+<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no">
+<meta name="keywords" content="#" />
+<meta name="description" content="#" />
+<link rel="stylesheet" type="text/css" href="css/trip_web.css">
+<script type="text/javascript" src="js/jquery-1.8.3.min.js"></script>
+<script src="js/common.js"></script>
+<script type="text/javascript" src="js/swiper.min.js"></script>
+<title>购物车</title>
+
+
+	</head>
+	<body style="background: #F9F9F9;">
+       <div class="xweb">
+		      <!--公共头部 start-->
+		      <div class="f_tit01 f_tit02">
+				  <a href="javascript:history.back(-1)" class="f_tit01L"><img src="img/return.png" alt="返回"></a>
+				      购物车					
+			      <span class="idx_lspan">
+		              <img src="img/menu.png" alt="菜单" class="idx_menu01">
+		              <img src="img/menu_close.png" alt="关闭菜单" class="idx_menu02">
+		          </span>
+			  </div>
+		      <!--公共头部 end-->
+		      
+		      <!--公共菜单 start-->
+	          <div id="menu"></div>
+              <!--公共菜单 end-->
+              
+              <div class="trip_main">
+              	 	<div class="shop_car_balance">
+              	 		<div class="consignee">
+					        <a href="#" title="">
+					            <p class="receve1"><span class="span1">收货人：</span>王晓春    186 2756 7841</p>
+					            <p class="receve2"><span class="span1">收货地址：</span>长沙市岳麓区科院佳园小区</p>
+					        </a>
+					    </div>
+              	 		<dl class="storeList">
+					        <dt>
+					            店铺：<span class="span1">金币商城</span>
+					            <span class="span2">共 <i>12</i> 件</span>
+					        </dt>
+					        <dd>
+					            <a href="#" title="" class="clear">
+					                <img src="img/hot_pro3.jpg" alt="">
+					                <p class="des">
+					                    烟港 山东烟台福山大樱桃 新鲜国…<br />
+					                    <span>数量</span>1
+					                </p>
+					                <p class="price">￥28.00 <br />
+					                    <span>×1</span>
+					                </p>
+					            </a>
+					        </dd>
+					        <dd>
+					            <a href="#" title="" class="clear">
+					                <img src="img/hot_pro2.jpg" alt="" />
+					                <p class="des">
+					                    烟港 山东烟台福山大樱桃 新鲜国…<br />
+					                    <span>数量</span>2
+					                </p>
+					                <p class="price">￥56.00 <br />
+					                    <span>×2</span>
+					                </p>
+					            </a>
+					        </dd>
+					    </dl>
+              	 		<a class="lookAll" href="#" title="">查看全部清单</a>
+              	 		<div class="pay_fast_way">
+              	 			<div class="pay_way_01 clearfix">
+              	 				<p class="coin_pay">金币支付<span>(可用金币：<i>67180</i>)</span></p>
+              	 				<p class="coin_now">
+              	 					1980
+              	 					<font>
+			      	  					<input type="checkbox" name="checkbox01" class="input_check" id="check1" />
+			      	  					<label for="check1"></label>
+			      	  				</font>
+              	 				</p>
+              	 				
+              	 			</div>
+              	 			<div class="pay_way_02 clearfix">
+              	 				<p class="coin_pay">其他方式支付</p>
+              	 				<p class="coin_now">
+              	 					1980
+              	 					<font>
+			      	  					<input type="checkbox" name="checkbox01" class="input_check" id="check2" />
+			      	  					<label for="check2"></label>
+			      	  				</font>
+              	 				</p>
+              	 				<ul class="payWayList clear">
+						            <li>
+						                <img src="img/payway1.png" alt="" class="img1">
+						                <img src="img/paywayA1.jpg" alt="" class="img2">
+						                <img src="img/payyes.jpg" alt="" class="img3">
+						            </li>
+						            <li>
+						                <img src="img/payway2.png" alt="" class="img1">
+						                <img src="img/paywayA2.jpg" alt="" class="img2">
+						                <img src="img/payyes.jpg" alt="" class="img3">
+						            </li>
+						            <li class="last">
+						                <img src="img/payway3.png" alt="" class="img1">
+						                <img src="img/paywayA3.jpg" alt="" class="img2">
+						                <img src="img/payyes.jpg" alt="" class="img3">
+						            </li>
+						            <div class="clear"></div>
+						        </ul>
+              	 			</div>
+              	 		</div>
+              	 		<div class="text_area">
+              	 			<p class="p1">备注</p>
+        					<textarea name="" id="" class="remarks"></textarea>
+              	 		</div>
+              	 		<div class="js_goon clearfix">
+              	 			<p>
+              	 				<em>共<span>6</span>件</em>
+              	 				<font> 金币支付：<i>1980</i></font>
+              	 			</p> 
+              	 			<a href="#" title="">去结算</a>
+              	 		</div>
+              	 	</div>
+              </div>
+              
+             
+       </div>
+       
+       <script src="js/trip_web.js"></script>
+       <script>
+       		// 购物车结算的支付方式选择
+			$('.payWayList li').click(function(event) {
+				$(this).children('.img1').toggle().siblings('.img2').toggle().siblings('.img3').toggle();
+				$(this).siblings().children('.img2').hide().siblings('.img3').hide().siblings('.img1').show();
+			});
+       	
+       </script>
+	</body>
+</html>

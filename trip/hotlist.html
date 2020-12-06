@@ -1,0 +1,615 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+	<meta http-equiv="Content-Type" content="text/x-component" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<link rel="icon" href="favicon.ico" mce_href="favicon.ico" type="image/x-icon"/>
+    <link rel="stylesheet" type="text/css" href="css/trip.css"/>
+    <script type="text/javascript" src="js/jquery-1.8.3.min.js"></script>
+    <script type="text/javascript" src="js/cycle.js"></script>
+	<title>旅游人酒店预订_列表</title>
+</head>
+<body style="background:#fafafa;">
+	 <!--第一种头部 start-->
+      <div id="head"></div>
+      <!--第一种头部 end-->
+      <div class="nei1200">
+	       <div class="zf_tit04" style="margin-bottom:5px;">
+	              <img src="images/map.png" alt="地图导航">
+	              <i>
+	                <a href="index.html">首页</a><span>&gt;</span>
+	                <a href="">酒店预订</a><span>&gt;</span>
+	                <em>酒店预订列表</em>
+	              </i>
+	       </div>
+	  </div>
+      
+      <div class="nei1200">
+	      <div class="rz_hy_sec1 rz_hy_sec10226">
+	     	<div class="rz_hy_sec1_head clearfix">
+		      	<ul>
+		      		<li>
+		      			<span class="rz_hy_tit01">目的地</span>
+		      			<select name="" style="width:140px;">
+		      				<option value="">长沙</option>
+		      			</select>
+		      		</li>
+		      		<li>
+			      		<span class="rz_hy_tit01">入住</span>
+			      		<div class="rz_hy_data_box">
+			      			<input  class="rz_text01" readonly="readonly" type="text" name="" id="calendar04" value="2017-01-02" />
+			      			<span class="date_span"><i class="idx_b01_date"></i></span>
+		      			</div>
+		      		</li>
+		      		<li>
+			      		<span class="rz_hy_tit01">离店</span>
+			      		<div class="rz_hy_data_box">
+			      			<input  class="rz_text01" readonly="readonly" type="text" name="" id="calendar04" value="2017-01-02" />
+			      			<span class="date_span"><i class="idx_b01_date"></i></span>
+		      			</div>
+		      		</li>
+		      		<li>
+		      			<span class="rz_hy_tit01">
+		      				关键字
+		      			</span>
+		      			<input class="rz_text01 rz_text02" type="" name="" id="" value="" placeholder="酒店名/位置/品牌" />
+		      			<a class="rz_hy_searc">搜索</a>
+		      		</li>
+		      	</ul>
+		    </div>
+	      	<div class="rz_filter_wrap">
+	      		<div class="rz_filter_list">
+	      			<div class="clearfix">
+			      		<div class="filter_left">位置：</div>
+			      		<div class="filter_right">
+			      			<dl>
+			      				<dt><a>不限</a></dt>
+			      				<dd>
+			      					<a class="act">商圈<i class="rz_sel_icon"></i></a>
+			      					<a>行政区<i class="rz_sel_icon"></i></a>
+			      					<a>机场/车站<i class="rz_sel_icon"></i></a>
+			      					<a>医院<i class="rz_sel_icon"></i></a>
+			      					<a>大学<i class="rz_sel_icon"></i></a>
+			      					<a>市内景点<i class="rz_sel_icon"></i></a>
+			      					<a>市外景点<i class="rz_sel_icon"></i></a>
+			      					<a>演出场馆<i class="rz_sel_icon"></i></a>
+			      				</dd>
+			      			</dl>
+			      		</div>
+		      		</div>
+		      		<div class="filter_selct_wrap">
+		      			<ul class="filter_selct clearfix">
+		      				<li class="act">
+		      					<i class="rz_check_icon"></i>
+	      						<em>五一广场/步行街/中…</em>
+		      				</li>
+		      				<li>
+		      					<i class="rz_check_icon"></i>
+	      						<em>火车站</em>
+		      				</li>
+		      				<li>
+		      					<i class="rz_check_icon"></i>
+	      						<em>河西大学城/岳麓风…</em>
+		      				</li>
+		      				<li>
+		      					<i class="rz_check_icon"></i>
+	      						<em>贺龙/东塘/侯家塘</em>
+		      				</li>
+		      				<li>
+		      					<i class="rz_check_icon"></i>
+	      						<em>开福寺/湘雅附一医…</em>
+		      				</li>
+		      				<li>
+		      					<i class="rz_check_icon"></i>
+	      						<em>汽车西站/梅溪湖/麓…</em>
+		      				</li>
+		      				<li>
+		      					<i class="rz_check_icon"></i>
+	      						<em>贺龙/东塘/侯家塘</em>
+		      				</li>
+		      				<li>
+		      					<i class="rz_check_icon"></i>
+	      						<em>贺龙/东塘/侯家塘</em>
+		      				</li>
+		      			</ul>
+		      			<span class="rz_open_click"></span>
+		      		</div>
+	      		</div>
+	      		<div class="rz_filter_list clearfix">
+	      			<div class="filter_left">房价：</div>
+	      			<div class="filter_right">
+		      			<dl>
+		      				<dt><a>不限</a></dt>
+		      				<dd>
+		      					<div class="filter_selct filter_selct2 clearfix">
+					      			<ul>
+					      				<li class="act">
+					      					<i class="rz_check_icon"></i>
+				      						<em>1000元以下</em>
+					      				</li>
+					      				<li>
+					      					<i class="rz_check_icon"></i>
+				      						<em>1001-2000元</em>
+					      				</li>
+					      				<li>
+					      					<i class="rz_check_icon"></i>
+				      						<em>2001-3000元</em>
+					      				</li>
+					      				<li>
+					      					<i class="rz_check_icon"></i>
+				      						<em>3001-4000元</em>
+					      				</li>
+					      				<li>
+					      					<i class="rz_check_icon"></i>
+				      						<em>4000元以上</em>
+					      				</li>
+					      			</ul>
+					      		</div>
+					      		<div class="filter_zdy">
+					      			<span>自定义</span>
+					      			<input type="text" name="" id="" value="" /> - <input type="text" name="" id="" value="" />
+					      			<span class="rz_zdy_sub">确定</span>
+					      		</div>
+		      				</dd>
+		      			</dl>
+			      	</div>
+	      		</div>
+	      		<div class="rz_filter_list clearfix">
+	      			<div class="filter_left">星级：</div>
+	      			<div class="filter_right">
+		      			<dl>
+		      				<dt><a>不限</a></dt>
+		      				<dd>
+		      					<div class="filter_selct filter_selct2 clearfix">
+					      			<ul>
+					      				<li class="act">
+					      					<i class="rz_check_icon"></i>
+				      						<em>商务会所</em>
+					      				</li>
+					      				<li>
+					      					<i class="rz_check_icon"></i>
+				      						<em>度假村</em>
+					      				</li>
+					      				<li>
+					      					<i class="rz_check_icon"></i>
+				      						<em>三星级</em>
+					      				</li>
+					      				<li>
+					      					<i class="rz_check_icon"></i>
+				      						<em>四星级</em>
+					      				</li>
+					      				<li>
+					      					<i class="rz_check_icon"></i>
+				      						<em>五星级</em>
+					      				</li>
+					      			</ul>
+					      		</div>
+		      				</dd>
+		      			</dl>
+			      	</div>
+	      		</div>
+				<div class="rz_filter_list clearfix">
+	      			<div class="filter_left">品牌：</div>
+	      			<div class="filter_right">
+		      			<dl>
+		      				<dt><a>不限</a></dt>
+		      				<dd>
+		      					<div class="filter_selct filter_selct2 clearfix">
+					      			<ul>
+					      				<li class="act">
+					      					<i class="rz_check_icon"></i>
+				      						<em>如家</em>
+					      				</li>
+					      				<li>
+					      					<i class="rz_check_icon"></i>
+				      						<em>7天</em>
+					      				</li>
+					      				<li>
+					      					<i class="rz_check_icon"></i>
+				      						<em>莫泰</em>
+					      				</li>
+					      				<li>
+					      					<i class="rz_check_icon"></i>
+				      						<em>汉庭</em>
+					      				</li>
+					      				<li>
+					      					<i class="rz_check_icon"></i>
+				      						<em>锦江之星</em>
+					      				</li>
+					      				<li>
+					      					<i class="rz_check_icon"></i>
+				      						<em>城市便捷</em>
+					      				</li>
+					      				<li>
+					      					<i class="rz_check_icon"></i>
+				      						<em>维也纳</em>
+					      				</li>
+					      				<li class="act">
+					      					<i class="rz_check_icon"></i>
+				      						<em>如家</em>
+					      				</li>
+					      				<li>
+					      					<i class="rz_check_icon"></i>
+				      						<em>7天</em>
+					      				</li>
+					      			</ul>
+					      		</div>
+					      		<span class="rz_open_click"></span>
+		      				</dd>
+		      			</dl>
+		      			
+			      	</div>
+	      		</div>
+	      		<div class="rz_filter_list clearfix">
+	      			<div class="filter_left">主题：</div>
+	      			<div class="filter_right">
+		      			<dl>
+		      				<dt><a>不限</a></dt>
+		      				<dd>
+		      					<div class="filter_selct filter_selct2 clearfix">
+					      			<ul>
+					      				<li class="act">
+					      					<i class="rz_check_icon"></i>
+				      						<em>海岛酒店</em>
+					      				</li>
+					      				<li>
+					      					<i class="rz_check_icon"></i>
+				      						<em>特色客栈</em>
+					      				</li>
+					      				<li>
+					      					<i class="rz_check_icon"></i>
+				      						<em>商务酒店</em>
+					      				</li>
+                                        <li>
+					      					<i class="rz_check_icon"></i>
+				      						<em>情侣酒店</em>
+					      				</li>
+					      				<li>
+					      					<i class="rz_check_icon"></i>
+				      						<em>青年旅社</em>
+					      				</li>
+                                        <li>
+					      					<i class="rz_check_icon"></i>
+				      						<em>温泉酒店</em>
+					      				</li>
+					      				<li>
+					      					<i class="rz_check_icon"></i>
+				      						<em>农家乐</em>
+					      				</li>
+					      			</ul>
+					      		</div>
+					      		<span class="rz_open_click"></span>
+		      				</dd>
+		      			</dl>
+			      	</div>
+	      		</div>
+	      	
+	      		<div class="rz_filter_open">
+	      			<span id=""><em class="rz_filter_zt">点击</em>展开品牌&人数<i class="rz_clk_btn"></i></span>
+	      		</div>
+	      	</div>
+	      </div>
+	      <div class="rz_jd_checked_box rz_jd_checked_box0226"><b class="">588</b><span>家酒店满足您的需求！</span><span class="rz_checked">五一广场/步行街/中山亭<i class="rz_close_checked"></i></span><span class="rz_checked">培训会<i class="rz_close_checked"></i></span>&nbsp;<a>清空条件</a></div>
+	      
+	      <div class="rz_hy_sec2">
+	      	<div class="rz_hy_sec2_box clearfix">
+		      	<div class="rz_hy_sec2_left">
+			      	<h4>热门推荐</h4>
+			      	<ul class="rz_tj_list clearfix">
+			      		<li>
+			      			<a href="">
+			      				<img src="images/rz_test_pic1.jpg" alt="推荐" />
+			      			</a>
+			      			<p class="p1"><a href="">长沙三景韦尔斯利酒店</a> </p>
+			      			<p class="p2"><span>￥1688起</span><i>优惠</i></p>
+			      		</li>
+			      		<li>
+			      			<a href="">
+			      				<img src="images/rz_test_pic2.jpg" alt="推荐"/>
+			      			</a>
+			      			<p class="p1"><a href="">长沙梅溪湖金茂豪华精选 </a> </p>
+			      			<p class="p2"><span>￥1688起</span><i>优惠</i></p>
+			      		</li>
+			      		<li>
+			      			<a href="">
+			      				<img src="images/rz_test_pic3.jpg" alt="推荐"/>
+			      			</a>
+			      			<p class="p1"><a href="">芙蓉国温德姆至尊豪廷大酒店</a>  </p>
+			      			<p class="p2"><span>￥1688起</span><i>优惠</i></p>
+			      		</li>
+			      	</ul>
+	      		</div>
+	      		<div class="rz_hy_sec2_right">
+		      		<a href="">
+		      			<img src="images/rz_test_pic41.jpg" alt="推荐"/>
+		      		</a>
+		      	</div>
+	      	</div>
+	      </div>
+	      <div class="rz_hy_sec3 rz_hy_sec30226">
+	      	<div class="rz_hy_sec3_head">
+	      		<div class="clearfix">
+	      			<ul class="rz_ul_list">
+	      				<li class="act">推荐</li>
+	      				<li>口碑<i class="rz_down_icon"></i></li>
+	      				<li>价格<i class="rz_down_icon"></i></li>
+	      			</ul>
+	      			<div class="rz_hy_sec3_head_right rz_hy_sec3_head_right02 act">
+	      				<i class="rz_check_icon"></i>
+	      				<em>优惠</em>
+	      			</div>
+	      		</div>
+	      	</div>
+	      	<div class="rz_hy_sec3_box_wrap">
+	      		<!--酒店循环开始-->
+	      		<div class="rz_hy_sec3_box">
+		      		<div class="rz_hy_sec3_list clearfix">
+		      			<div class="r_h_s3_div1">
+			      			<a>
+			      				<img src="images/rz_test_pic5.jpg" alt="酒店1" />
+			      			</a>
+			      		</div>
+		      			<div class="r_h_s3_div2">
+		      				<div class="r_h_s3_d2_top clearfix">
+			      				<h2><i class="rz_hotel_rangk">01</i>长沙华瑞和酒店</h2>
+			      				<ul class="rz_star_ul">
+									<li><img src="images/start.png" alt="星星"></li>
+									<li><img src="images/start.png" alt="星星"></li>
+									<li><img src="images/start.png" alt="星星"></li>
+									<li><img src="images/start.png" alt="星星"></li>
+									<li><img src="images/start.png" alt="星星"></li>
+								</ul>
+								<span>五星级</span>
+							</div>
+							<div class="r_h_s3_d2_body">
+								<p class="p1">[五一广场/步行街/中山亭]</p>
+								<p class="p2">芙蓉中路二段80号(靠浏城桥大厦)地铁2号线芙蓉广场站4号出口步行8分钟</p>
+								<p class="p3"><span class="rz_checkmap_span"><i class="rz_checkmap_icon"></i> <em>查看地图</em> </span> </p>
+								<ul class="htlistR05ul clearfix">
+                                   <li class="htlistR05li">
+                                       <img src="images/hoticon01.png" alt="wifi" class="htlistR04_img01">
+                                       <img src="images/hoticon01g.png" alt="wifi" class="htlistR04_img02">
+                                   </li>
+                                   <li>
+                                       <img src="images/hoticon02.png" alt="电视" class="htlistR04_img01">
+                                       <img src="images/hoticon02g.png" alt="电视" class="htlistR04_img02">
+                                   </li>
+                                   <li>
+                                       <img src="images/hoticon03.png" alt="餐具" class="htlistR04_img01">
+                                       <img src="images/hoticon03g.png" alt="餐具" class="htlistR04_img02">
+                                   </li>
+                                   <li>
+                                       <img src="images/hoticon04.png" alt="器材" class="htlistR04_img01">
+                                       <img src="images/hoticon04g.png" alt="器材" class="htlistR04_img02">
+                                   </li>
+                                   <li>
+                                       <img src="images/hoticon05.png" alt="接机" class="htlistR04_img01">
+                                       <img src="images/hoticon05g.png" alt="接机" class="htlistR04_img02">
+                                   </li>
+                                   <li>
+                                       <img src="images/hoticon06.png" alt="会议" class="htlistR04_img01">
+                                       <img src="images/hoticon06g.png" alt="会议" class="htlistR04_img02">
+                                   </li>
+                                   <li>
+                                       <img src="images/hoticon07.png" alt="打印机" class="htlistR04_img01">
+                                       <img src="images/hoticon07g.png" alt="打印机" class="htlistR04_img02">
+                                   </li>
+                                   <li>
+                                       <img src="images/hoticon08.png" alt="泳池" class="htlistR04_img01">
+                                       <img src="images/hoticon08g.png" alt="泳池" class="htlistR04_img02">
+                                   </li>
+                               </ul>
+							</div>
+		      			</div>
+		      			<div class="r_h_s3_div3">
+		      				<p class="p1"><span>100%</span> 好评率</p>
+		      				<p class="p2">来自 <span>23545</span> 条点评</p>
+		      				<p class="p3"><a ><i class="rz_love_icon"></i><span>2456</span>人收藏</a></p>
+		      				<p class="p4">最新预订:49分钟前</p>
+		      			</div>
+		      			<div class="r_h_s3_div4">
+		      				<p class="p1">￥<span>1388</span>起</p>
+		      				<p class="p2"><i>优惠</i>&nbsp;35元</p>
+		      				<a class="a1" href="">查看详情</a>
+		      			</div>
+		      		</div>
+		      		<div class="rz_hylist_map">
+		      			<!--地图存放处-->
+		      		</div>
+	      		</div>
+	      		<!--酒店循环开始end-->
+	      		
+	      		<div class="rz_hy_sec3_box">
+		      		<div class="rz_hy_sec3_list clearfix">
+		      			<div class="r_h_s3_div1">
+			      			<a>
+			      				<img src="images/rz_test_pic6.jpg" alt="酒店1" />
+			      			</a>
+			      		</div>
+		      			<div class="r_h_s3_div2">
+		      				<div class="r_h_s3_d2_top clearfix">
+			      				<h2><i class="rz_hotel_rangk">02</i>湖南长沙佳兴世尊酒店佳宾楼</h2>
+			      				<ul class="rz_star_ul">
+									<li><img src="images/start.png" alt="星星"></li>
+									<li><img src="images/start.png" alt="星星"></li>
+									<li><img src="images/start.png" alt="星星"></li>
+									<li><img src="images/start.png" alt="星星"></li>
+									<li><img src="images/start.png" alt="星星"></li>
+								</ul>
+								<span>五星级</span>
+							</div>
+							<div class="r_h_s3_d2_body">
+								<p class="p1">[五一广场/步行街/中山亭]</p>
+								<p class="p2">芙蓉中路二段80号(靠浏城桥大厦)地铁2号线芙蓉广场站4号出口步行8分钟</p>
+								<p class="p3"><span class="rz_checkmap_span"><i class="rz_checkmap_icon"></i> <em>查看地图</em> </span> </p>
+								<ul class="htlistR05ul clearfix">
+                                   <li class="htlistR05li">
+                                       <img src="images/hoticon01.png" alt="wifi" class="htlistR04_img01">
+                                       <img src="images/hoticon01g.png" alt="wifi" class="htlistR04_img02">
+                                   </li>
+                                   <li>
+                                       <img src="images/hoticon02.png" alt="电视" class="htlistR04_img01">
+                                       <img src="images/hoticon02g.png" alt="电视" class="htlistR04_img02">
+                                   </li>
+                                   <li>
+                                       <img src="images/hoticon03.png" alt="餐具" class="htlistR04_img01">
+                                       <img src="images/hoticon03g.png" alt="餐具" class="htlistR04_img02">
+                                   </li>
+                                   <li>
+                                       <img src="images/hoticon04.png" alt="器材" class="htlistR04_img01">
+                                       <img src="images/hoticon04g.png" alt="器材" class="htlistR04_img02">
+                                   </li>
+                                   <li>
+                                       <img src="images/hoticon05.png" alt="接机" class="htlistR04_img01">
+                                       <img src="images/hoticon05g.png" alt="接机" class="htlistR04_img02">
+                                   </li>
+                                   <li>
+                                       <img src="images/hoticon06.png" alt="会议" class="htlistR04_img01">
+                                       <img src="images/hoticon06g.png" alt="会议" class="htlistR04_img02">
+                                   </li>
+                                   <li>
+                                       <img src="images/hoticon07.png" alt="打印机" class="htlistR04_img01">
+                                       <img src="images/hoticon07g.png" alt="打印机" class="htlistR04_img02">
+                                   </li>
+                                   <li>
+                                       <img src="images/hoticon08.png" alt="泳池" class="htlistR04_img01">
+                                       <img src="images/hoticon08g.png" alt="泳池" class="htlistR04_img02">
+                                   </li>
+                               </ul>
+							</div>
+		      			</div>
+		      			<div class="r_h_s3_div3">
+		      				<p class="p1"><span>98%</span> 好评率</p>
+		      				<p class="p2">来自 <span>23545</span> 条点评</p>
+		      				<p class="p3"><a ><i class="rz_love_icon"></i><span>2456</span>人收藏</a></p>
+		      				<p class="p4">最新预订:49分钟前</p>
+		      			</div>
+		      			<div class="r_h_s3_div4">
+		      				<p class="p1">￥<span>888</span>起</p>
+		      				<p class="p2"><i>优惠</i>&nbsp;35元</p>
+		      				<a class="a1" href="">查看详情</a>
+		      			</div>
+		      		</div>
+		      		<div class="rz_hylist_map">
+		      			<!--地图存放处-->
+		      		</div>
+	      		</div>
+	      		<div class="rz_hy_sec3_box">
+		      		<div class="rz_hy_sec3_list clearfix">
+		      			<div class="r_h_s3_div1">
+			      			<a>
+			      				<img src="images/rz_test_pic7.jpg" alt="酒店1" />
+			      			</a>
+			      		</div>
+		      			<div class="r_h_s3_div2">
+		      				<div class="r_h_s3_d2_top clearfix">
+			      				<h2><i class="rz_hotel_rangk">03</i>长沙现代凯莱大酒店</h2>
+			      				<ul class="rz_star_ul">
+									<li><img src="images/start.png" alt="星星"></li>
+									<li><img src="images/start.png" alt="星星"></li>
+									<li><img src="images/start.png" alt="星星"></li>
+									<li><img src="images/start.png" alt="星星"></li>
+								</ul>
+								<span>四星级</span>
+							</div>
+							<div class="r_h_s3_d2_body">
+								<p class="p1">[五一广场/步行街/中山亭]</p>
+								<p class="p2">芙蓉中路二段80号(靠浏城桥大厦)地铁2号线芙蓉广场站4号出口步行8分钟</p>
+								<p class="p3"><span class="rz_checkmap_span"><i class="rz_checkmap_icon"></i> <em>查看地图</em> </span> </p>
+								<ul class="htlistR05ul clearfix">
+                                   <li class="htlistR05li">
+                                       <img src="images/hoticon01.png" alt="wifi" class="htlistR04_img01">
+                                       <img src="images/hoticon01g.png" alt="wifi" class="htlistR04_img02">
+                                   </li>
+                                   <li>
+                                       <img src="images/hoticon02.png" alt="电视" class="htlistR04_img01">
+                                       <img src="images/hoticon02g.png" alt="电视" class="htlistR04_img02">
+                                   </li>
+                                   <li>
+                                       <img src="images/hoticon03.png" alt="餐具" class="htlistR04_img01">
+                                       <img src="images/hoticon03g.png" alt="餐具" class="htlistR04_img02">
+                                   </li>
+                                   <li>
+                                       <img src="images/hoticon04.png" alt="器材" class="htlistR04_img01">
+                                       <img src="images/hoticon04g.png" alt="器材" class="htlistR04_img02">
+                                   </li>
+                                   <li>
+                                       <img src="images/hoticon05.png" alt="接机" class="htlistR04_img01">
+                                       <img src="images/hoticon05g.png" alt="接机" class="htlistR04_img02">
+                                   </li>
+                                   <li>
+                                       <img src="images/hoticon06.png" alt="会议" class="htlistR04_img01">
+                                       <img src="images/hoticon06g.png" alt="会议" class="htlistR04_img02">
+                                   </li>
+                                   <li>
+                                       <img src="images/hoticon07.png" alt="打印机" class="htlistR04_img01">
+                                       <img src="images/hoticon07g.png" alt="打印机" class="htlistR04_img02">
+                                   </li>
+                                   <li>
+                                       <img src="images/hoticon08.png" alt="泳池" class="htlistR04_img01">
+                                       <img src="images/hoticon08g.png" alt="泳池" class="htlistR04_img02">
+                                   </li>
+                               </ul>
+							</div>
+		      			</div>
+		      			<div class="r_h_s3_div3">
+		      				<p class="p1"><span>100%</span> 好评率</p>
+		      				<p class="p2">来自 <span>23545</span> 条点评</p>
+		      				<p class="p3"><a ><i class="rz_love_icon"></i><span>2456</span>人收藏</a></p>
+		      				<p class="p4">最新预订:49分钟前</p>
+		      			</div>
+		      			<div class="r_h_s3_div4">
+		      				<p class="p1">￥<span>799</span>起</p>
+		      				<a class="a1" href="">查看详情</a>
+		      			</div>
+		      		</div>
+		      		<div class="rz_hylist_map">
+		      			<!--地图存放处-->
+		      		</div>
+	      		</div>
+	      	</div>
+	      </div>
+      </div>
+      <div class="zf_page01">
+           <ul class="zf_page0222_ul clearfix">
+                <li class="zf_page0222_prev"><a href="#">&lt;</a></li>
+                <li><a href="#">1</a></li>
+                <li class="zf_page0222_on"><a href="#">2</a></li>
+                <li class="zf_page0222_none"><a href="#">...</a></li>
+                <li><a href="#">8</a></li>
+                <li class="zf_page0222_next"><a href="#">&gt;</a></li>
+            </ul>
+    </div>
+       <!--底部 start-->
+       <div id="foot"></div>
+       <!--底部 end-->
+       
+       <!--右侧悬浮 start-->
+       <div id="myR"></div>
+       <!--右侧悬浮 end-->
+        
+      <script type="text/javascript" src="js/trip.js"></script>
+      <script type="text/javascript" src="js/cQuery_110421.js"></script>
+      <script type="text/javascript" src="js/calendar.js"></script>
+      <script>
+      function rili(a){
+      	$(a).regMod("calendar","6.0", {
+				options: {
+				autoShow: !1,
+				showWeek: !0,
+				maxDate: function() {
+					var a = (new Date).addYears(1);
+					return a.getFullYear() + "-" + (a.getMonth() + 1) + "-" + a.getDate()
+				}()
+			   },
+			   listeners:{
+							   onBeforeShow: function() {},
+							   onChange: function() {}
+			              }
+			  })
+      }
+      rili("#calendar04");   
+      </script>
+</body>
+</html>

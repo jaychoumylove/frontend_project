@@ -1,0 +1,380 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="UTF-8"/>
+<meta http-equiv="Cache-Control" content="no-cache"/>
+<meta content="telephone=no" name="format-detection" />
+<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no">
+<meta name="keywords" content="#" />
+<meta name="description" content="#" />
+<link rel="stylesheet" type="text/css" href="css/cityPicke.css"/>
+<link rel="stylesheet" type="text/css" href="css/trip_web.css">
+<script type="text/javascript" src="js/jquery-1.8.3.min.js"></script>
+<script type="text/javascript" src="js/swiper.min.js" ></script>
+<script src="js/common.js"></script>
+<script src="js/cityPicke.js"></script>
+<title>酒店预定</title>
+</head>
+<body class="bdbg">
+<div class="rz_shaixuan_wrap">
+	<div class="f_tit10">
+		  <a id="sx_back" class="f_tit01L"><img src="img/return.png" alt="返回"></a>
+		   筛选
+	  </div>
+	<ul class="rz_shaixuan_left">
+      	<li class="act">房价</li>
+      	<li>星级</li>
+      	<li>品牌</li>
+      	<li>主题</li>
+      	<li>服务</li>
+      	<li>人数</li>
+      </ul>
+      <div class="rz_shaixuan_right">
+      	<div class="rz_shaixuan_box">
+      		<div class="rz_shaixuan_sec1">
+      			<span>价格区间（元）</span>
+      			<input type="text" name="" id="" placeholder="最低价" value="" /> - <input type="text" name="" id="" placeholder="最高价" value="" />
+      		</div>
+      		<ul class="rz_shaixuan_ul">
+      			<li>150元以下</li>
+      			<li>150-300元</li>
+      			<li>301-450元</li>
+      			<li>451-600元</li>
+      			<li>601-750元</li>
+      			<li>751元以上</li>
+      		</ul>
+      	</div>
+      	<div class="rz_shaixuan_box">
+      		<div class="">
+      			<ul class="rz_shaixuan_ul">
+          			<li>1星级</li>
+          			<li>2星级</li>
+          			<li>3星级</li>
+          			<li>4星级</li>
+          			<li>5星级</li>
+          		</ul>
+      		</div>
+      	</div>
+      	<div class="rz_shaixuan_box">
+      		<div class="">
+      			<ul class="rz_shaixuan_ul">
+      				<li>维也纳</li>
+      				<li>速8</li>
+      				<li>万达</li>
+      				<li>洲际</li>
+      				<li>桔子</li>
+          			<li>如家</li>
+          			<li>莫泰</li>
+          			<li>华住</li>
+          			<li>锦江之星</li>
+          			<li>7天</li>
+          		</ul>
+      		</div>
+      	</div>
+      	<div class="rz_shaixuan_box">
+      		<div class="">
+      			<ul class="rz_shaixuan_ul">
+          			<li>青年旅舍</li>
+          			<li>休闲度假</li>
+          			<li>亲子时刻</li>
+          			<li>浪漫情侣</li>
+          			<li>商务出行</li>
+          		</ul>
+      		</div>
+      	</div>
+      	<div class="rz_shaixuan_box">
+      		<div class="">
+      			<ul class="rz_shaixuan_ul2">
+          			<li>免费wifi</li>
+          			<li>有线宽带</li>
+          			<li>停车场</li>
+          			<li>健身房</li>
+          			<li>接送服务</li>
+          		</ul>
+      		</div>
+      	</div>
+      	<div class="rz_shaixuan_box">
+      		<div class="">
+      			<ul class="rz_shaixuan_ul">
+          			<li>1-5人</li>
+          			<li>5-20人</li>
+          			<li>20-50人</li>
+          			<li>50-100人</li>
+          			<li>100-200人</li>
+          			<li>200-500人</li>
+          		</ul>
+      		</div>
+      	</div>
+      </div>
+
+	<div class="sx_btm_wrap">
+		<a id="reset_sx">重置</a>
+		<a class="sx_sub_btn" href="">确定</a>
+	</div>
+ </div>
+        
+	<div class="rz_hot_near">
+		<span class="rz_hot_near_close"><img src="img/rz_close_icon.png" /></span>
+		<dl>
+			<dt>交通枢纽</dt>
+			<dd>
+				<span>长沙南站</span>
+				<span>长沙站</span>
+				<span>长沙黄花机场</span>
+			</dd>
+		</dl>
+		<dl>
+			<dt>热门位置</dt>
+			<dd>
+				<span>五一广场/步行街/中山亭</span>
+				<span>火车站</span>
+				<span>河西大学城/岳麓风景区/橘子洲头</span> 
+				<span>贺龙/东塘/侯家塘</span> 
+				<span>开福寺/湘雅附一医院/省博物馆</span> 
+				<span>高铁南站</span> 
+				<span>汽车西站/梅溪湖/麓谷高新区</span>
+				<span>省政府/红星会展/汽车南站</span>
+				<span>市政府/湘雅附三/长沙市肿瘤医院</span> 
+				<span>中医药大学/含浦/洋湖湿地公园</span>
+			</dd>
+		</dl>
+	</div>
+	<div class="account-box jd_account">
+        <h2 class="account-title">
+            <span class="left c3">选择日期</span>
+            <a href="###" class="f-btn-fhby right">返回本月</a>
+            <div class="clearfix right">
+                <div class="f-btn-jian left">&lt;</div><div class="left f-riqi"><span class="f-year">2017</span>年<span class="f-month">1</span>月</div><div class="f-btn-jia left">&gt;</div><!-- 一定不能换行-->
+            </div>
+        </h2>
+        <div class="f-rili-table">
+            <div class="f-rili-head celarfix">
+                <div class="f-rili-th">周日</div>
+                <div class="f-rili-th">周一</div>
+                <div class="f-rili-th">周二</div>
+                <div class="f-rili-th">周三</div>
+                <div class="f-rili-th">周四</div>
+                <div class="f-rili-th">周五</div>
+                <div class="f-rili-th">周六</div>
+                <div class="clear"></div>
+            </div>
+            <div class="f-tbody clearfix">
+
+            </div>
+        </div>
+    </div>
+    <div class="mask"></div>
+       <div class="xweb">
+		      <!--公共头部 start-->
+		      <div class="f_tit01 f_tit02">
+					<a href="javascript:history.back(-1)" class="f_tit01L"><img src="img/return.png" alt="返回"></a>
+					<span class="rz_city"><i class="rz_head_map"></i><em>长沙</em><input type="" name="" class="city" id="" value="长沙" readonly /></span>
+					<span class="idx_lspan">
+		              <img src="img/menu.png" alt="菜单" class="idx_menu01">
+		              <img src="img/menu_close.png" alt="关闭菜单" class="idx_menu02">
+		          </span>
+			  </div>
+		      <!--公共头部 end-->
+		      
+		      <!--公共菜单 start-->
+	          <div id="menu"></div>
+              <!--公共菜单 end-->
+              
+              <div class="trip_main">
+              	<div class="rz_jd_wrap">
+              	  <div class="rz_jd_list_head clearfix">
+              	  	<div class="date_left">入店日期：<span>02-10</span></div>
+              	  	<div class="date_left">离店日期：<span>02-10</span></div>
+              	  	<div class="date_right"><input type="text" name="" id="" value="" placeholder="酒店名称/位置不限" /><span class="rz_seac"></span></div>
+              	  </div>
+              	  <div class="rz_jd_list_body">
+              	  	<ul class="clearfix">
+              	  		<li>
+              	  			<a>排序<i class="rz_jd_sort"></i></a>
+              	  			<p class="rz_jd_list_p">
+              	  				<a href="">默认</a>
+              	  				<a href="">口碑  高-低</a>
+              	  				<a href="">价格  低-高</a>
+              	  				<a href="">价格  高-低</a>
+              	  				<a href="">星级  高-低</a>
+              	  			</p>
+              	  		</li>
+              	  		<li>
+              	  			<a>类型<i class="rz_jd_sort"></i></a>
+              	  			<p class="rz_jd_list_p">
+              	  				<a href="">默认</a>
+              	  				<a href="">口碑  高-低</a>
+              	  				<a href="">价格  低-高</a>
+              	  				<a href="">价格  高-低</a>
+              	  				<a href="">星级  高-低</a>
+              	  			</p>
+              	  		</li>
+              	  		<li>
+              	  			<a>优惠<i class="rz_jd_sort"></i></a>
+              	  			<p class="rz_jd_list_p">
+              	  				<a href="">默认</a>
+              	  				<a href="">优惠折扣</a>
+              	  				<a href="">返现</a>
+              	  				<a href="">促销</a>
+              	  			</p>
+              	  		</li>
+              	  		<li id="sx_btn">
+              	  			<a>筛选<i class="rz_jd_sort"></i></a>
+              	  		</li>
+              	  	</ul>
+              	  </div>
+              	  	<ul class="rz_jd_nav_list clearfix">
+	      	  			<li><a href=""><img src="img/rz_jd_nav1.png" /></a></li>
+	      	  			<li><a href=""><img src="img/rz_jd_nav2.png" /></a></li>
+	      	  			<li><a href=""><img src="img/rz_jd_nav3.png" /></a></li>
+	      	  			<li><a href=""><img src="img/rz_jd_nav4.png" /></a></li>
+	      	  			<li><a href=""><img src="img/rz_jd_nav5.png" /></a></li>
+	      	  			<li><a href=""><img src="img/rz_jd_nav6.png" /></a></li>
+	      	  		</ul>
+              	  <div class="rz_jd_list_wrap">
+              	  		<div class="idxmbox">
+				          	 <a href="#">
+				          	 	 <img src="img/hot01.jpg" alt="湖南长沙佳兴世尊酒店佳宾楼 ">
+				          	 	 <i><span>100%</span>&nbsp;好评率</i>
+				          	 </a>
+				          	 <p class="clearfix"><span>湖南长沙佳兴世尊酒店佳宾楼湖南长沙佳兴世尊酒店佳宾楼</span><i>￥168起</i></p>
+				          	 <div class="idxstar clearfix">
+				          	 	  <ul class="clearfix">
+				          	 	  	 <li><img src="img/start.png" alt="星级"></li>
+				          	 	  	 <li><img src="img/start.png" alt="星级"></li>
+				          	 	  	 <li><img src="img/start.png" alt="星级"></li>
+				          	 	  	 <li><img src="img/start.png" alt="星级"></li>
+				          	 	  	 <li><img src="img/start.png" alt="星级"></li>
+				          	 	  </ul>
+				          	 	  <span>豪华型</span>
+				          	 </div>
+			          	</div>
+			          	<div class="idxmbox">
+				          	 <a href="#">
+				          	 	 <img src="img/hot02.jpg" alt="湖南长沙佳兴世尊酒店佳宾楼 ">
+				          	 	 <i><span>98%</span>&nbsp;好评率</i>
+				          	 </a>
+				          	 <p class="clearfix"><span>湖南长沙佳兴世尊酒店佳宾楼湖南长沙佳兴世尊酒店佳宾楼</span><i>￥168起</i></p>
+				          	 <div class="idxstar clearfix">
+				          	 	  <ul class="clearfix">
+				          	 	  	 <li><img src="img/start.png" alt="星级"></li>
+				          	 	  	 <li><img src="img/start.png" alt="星级"></li>
+				          	 	  	 <li><img src="img/start.png" alt="星级"></li>
+				          	 	  	 <li><img src="img/start.png" alt="星级"></li>
+				          	 	  	 <li><img src="img/start.png" alt="星级"></li>
+				          	 	  </ul>
+				          	 	  <span>豪华型</span>
+				          	 </div>
+			          	</div>
+			          	<div class="idxmbox">
+				          	 <a href="#">
+				          	 	 <img src="img/hot03.jpg" alt="湖南长沙佳兴世尊酒店佳宾楼 ">
+				          	 	 <i><span>90%</span>&nbsp;好评率</i>
+				          	 </a>
+				          	 <p class="clearfix"><span>湖南长沙佳兴世尊酒店佳宾楼湖南长沙佳兴世尊酒店佳宾楼</span><i>￥168起</i></p>
+				          	 <div class="idxstar clearfix">
+				          	 	  <ul class="clearfix">
+				          	 	  	 <li><img src="img/start.png" alt="星级"></li>
+				          	 	  	 <li><img src="img/start.png" alt="星级"></li>
+				          	 	  	 <li><img src="img/start.png" alt="星级"></li>
+				          	 	  	 <li><img src="img/start.png" alt="星级"></li>
+				          	 	  	 <li><img src="img/start.png" alt="星级"></li>
+				          	 	  </ul>
+				          	 	  <span>豪华型</span>
+				          	 </div>
+			          	</div>
+			          	<div class="idxmbox">
+				          	 <a href="#">
+				          	 	 <img src="img/hot01.jpg" alt="湖南长沙佳兴世尊酒店佳宾楼 ">
+				          	 	 <i><span>100%</span>&nbsp;好评率</i>
+				          	 </a>
+				          	 <p class="clearfix"><span>湖南长沙佳兴世尊酒店佳宾楼湖南长沙佳兴世尊酒店佳宾楼</span><i>￥168起</i></p>
+				          	 <div class="idxstar clearfix">
+				          	 	  <ul class="clearfix">
+				          	 	  	 <li><img src="img/start.png" alt="星级"></li>
+				          	 	  	 <li><img src="img/start.png" alt="星级"></li>
+				          	 	  	 <li><img src="img/start.png" alt="星级"></li>
+				          	 	  	 <li><img src="img/start.png" alt="星级"></li>
+				          	 	  	 <li><img src="img/start.png" alt="星级"></li>
+				          	 	  </ul>
+				          	 	  <span>豪华型</span>
+				          	 </div>
+			          	</div>
+			          	<div class="idxmbox">
+				          	 <a href="#">
+				          	 	 <img src="img/hot02.jpg" alt="湖南长沙佳兴世尊酒店佳宾楼 ">
+				          	 	 <i><span>100%</span>&nbsp;好评率</i>
+				          	 </a>
+				          	 <p class="clearfix"><span>湖南长沙佳兴世尊酒店佳宾楼湖南长沙佳兴世尊酒店佳宾楼</span><i>￥168起</i></p>
+				          	 <div class="idxstar clearfix">
+				          	 	  <ul class="clearfix">
+				          	 	  	 <li><img src="img/start.png" alt="星级"></li>
+				          	 	  	 <li><img src="img/start.png" alt="星级"></li>
+				          	 	  	 <li><img src="img/start.png" alt="星级"></li>
+				          	 	  	 <li><img src="img/start.png" alt="星级"></li>
+				          	 	  	 <li><img src="img/start.png" alt="星级"></li>
+				          	 	  </ul>
+				          	 	  <span>豪华型</span>
+				          	 </div>
+			          	</div>
+			          	<div class="idxmbox">
+				          	 <a href="#">
+				          	 	 <img src="img/hot03.jpg" alt="湖南长沙佳兴世尊酒店佳宾楼 ">
+				          	 	 <i><span>100%</span>&nbsp;好评率</i>
+				          	 </a>
+				          	 <p class="clearfix"><span>湖南长沙佳兴世尊酒店佳宾楼湖南长沙佳兴世尊酒店佳宾楼</span><i>￥168起</i></p>
+				          	 <div class="idxstar clearfix">
+				          	 	  <ul class="clearfix">
+				          	 	  	 <li><img src="img/start.png" alt="星级"></li>
+				          	 	  	 <li><img src="img/start.png" alt="星级"></li>
+				          	 	  	 <li><img src="img/start.png" alt="星级"></li>
+				          	 	  	 <li><img src="img/start.png" alt="星级"></li>
+				          	 	  	 <li><img src="img/start.png" alt="星级"></li>
+				          	 	  </ul>
+				          	 	  <span>豪华型</span>
+				          	 </div>
+			          	</div>
+	              </div>
+              	</div>  
+              	  <!--底部菜单 start-->
+	              <div class="btmH"></div>
+	              <div class="f_tit_bnav">
+		                <ul>
+		                   <li><a href="idx.html">
+		                   	   <img src="img/icon01.png" alt="首页" class="f_tit_img01">
+		                   	   <img src="img/icon01g.png" alt="首页" class="f_tit_img02">首页
+		                       </a>
+		                  </li>
+		                   <li class="f_tit_li"><a href="find.html">
+		                   	   <img src="img/icon02.png" alt="发现" class="f_tit_img01">
+		                   	   <img src="img/icon02g.png" alt="发现" class="f_tit_img02">发现
+		                   </a></li>
+		                   <li><a href="mycenter.html">
+		                   	   <img src="img/icon03.png" alt="会员中心" class="f_tit_img01">
+		                   	   <img src="img/icon03g.png" alt="会员中心" class="f_tit_img02">会员中心
+		                   </a></li>
+		                   <li><a href="kf.html">
+		                   	   <img src="img/icon04.png" alt="客服" class="f_tit_img01">
+		                   	   <img src="img/icon04g.png" alt="客服" class="f_tit_img02">客服
+		                   </a></li>
+		                   <li><a href="cycenter.html">
+		                   	   <img src="img/icon05.png" alt="创业中心" class="f_tit_img01">
+		                   	   <img src="img/icon05g.png" alt="创业中心" class="f_tit_img02">创业中心
+		                   </a></li>
+		                 </ul>
+		           </div>
+		           <!--底部菜单 end-->
+              </div>
+              <img src="img/top.png" alt="返回顶部" class="idx_top">
+       </div>
+    <script src="js/rz_data.js" type="text/javascript" charset="utf-8"></script>   
+   <script src="js/trip_web.js"></script>
+   <script>
+   $(function(){
+   		$(".city").CityPicker();
+   });
+   	
+
+   </script>
+</body>
+</html>

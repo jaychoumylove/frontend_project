@@ -1,0 +1,94 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="UTF-8"/>
+<meta http-equiv="Cache-Control" content="no-cache"/>
+<meta content="telephone=no" name="format-detection" />
+<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no">
+<meta name="keywords" content="#" />
+<meta name="description" content="#" />
+<link rel="stylesheet" type="text/css" href="css/trip_web.css">
+<script type="text/javascript" src="js/jquery-1.8.3.min.js"></script>
+<script src="js/common.js"></script>
+<title>酒店信息</title>
+</head>
+	<body class="bdbg">
+       <div class="xweb">
+		      <!--公共头部 start-->
+		      <div class="f_tit01 f_tit02 bg_color_blue">
+				  <a href="javascript:history.back(-1)" class="f_tit01L"><img src="img/return.png" alt="返回"></a>
+				   酒店信息					
+			      <span class="idx_lspan">
+		              <img src="img/menu.png" alt="菜单" class="idx_menu01">
+		              <img src="img/menu_close.png" alt="关闭菜单" class="idx_menu02">
+		          </span>
+			  </div>
+		      <!--公共头部 end-->
+		      
+		      <!--公共菜单 start-->
+	          <div id="menu"></div>
+              <!--公共菜单 end-->
+              
+              <div class="trip_main">
+              	<div class="jd_addr_sec1">
+              	  <h1 class="jd_name">湖南长沙佳兴世尊酒店佳宾楼</h1>
+              	  <dl class="jd_addr_sec1_dl clearfix">
+              	  	<dt><img src="img/rz_head_map2.png" alt="地址"></dt>
+              	  	<dd>芙蓉南路二段128号(地铁1号线桂花坪站口),近省政府生态动物园,洋湖湿地公园</dd>
+              	  </dl>
+              	</div>
+              	
+              	<div class="jd_addr_sec3">
+              		<h2 class="jd_name">酒店设施和服务</h2>
+              		<div class="jd_addr_sec3_box">
+	              		<p class="jd_addr_sec2_p2">接机服务、残疾人客房、会议厅、商务中心、收费停车场行李存放服务、专职行李员、前台贵重物品保险柜、有可无线上网的公共区域、叫醒服务、票务服务、免费旅游交通图、自动取款机、外币兑换、洗衣服务商场 滚梯/电梯</p>
+              		</div>
+              	</div>
+              	<div class="jd_addr_sec3">
+              		<h2 class="jd_name">酒店餐饮设施</h2>
+              		<div class="jd_addr_sec3_box">
+	              		<p class="jd_addr_sec2_p2">中餐厅、西餐厅、日式餐厅、大堂吧、酒吧、咖啡厅全天送餐服务、会议服务设施</p>
+              		</div>
+              	</div>
+              	<div class="jd_addr_sec3">
+              		<h2 class="jd_name">客房设施和服务</h2>
+              		<div class="jd_addr_sec3_box">
+	              		<p class="jd_addr_sec2_p2">有线麦克、无线麦克、FlipChart 纸/笔、演讲台、视频LED电视 Polycom多方电话、引导指示牌、桌卡、会场外签到台、大堂签到台、功放、音箱、投影仪、投影幕布DVD 录像机 白板 扫描仪/复印机</p>
+              		</div>
+              	</div>
+              	<div class="jd_addr_sec4">
+              		<h2 class="jd_name">酒店简介</h2>
+              		<div class="jd_addr_sec4_box">
+              			<p class="jd_addr_sec4_p1 clearfix"><span>开业时间: <i>2014年</i></span><span>装修时间: <i>2014年</i></span></p>
+              			<p class="jd_addr_sec2_p2">长沙现代凯莱大酒店作为凯莱酒店集团旗下的五星级品牌，以其完善的设施与以客为尊的服务为宾客开启高端酒店的新旅程。酒店地理位置得天独厚，位于长沙市新兴的政治中心，可步行至地铁站口，30分钟车程到达长沙黄花国际机场，20分钟车程即可到达长沙南站，距离高速公路仅需10分钟车程，交通十分便捷。长沙现代凯莱大酒店定会成为您的惬意之选! 【高铁巴士服务】 提前一天致电酒店</p>
+              		</div>
+              		<span class="jd_addr_sec2_more rz_jd_more_btn color_blue">查看更多<i>&gt;</i></span>
+              	</div>
+              	<div class="jd_addr_bottom">
+              		<a class="jd_addr_back bg_color_blue">返回并继续预定</a>
+              	</div>
+              </div>
+              <img src="img/top.png" alt="返回顶部" class="idx_top">
+       </div>
+       
+       <script src="js/trip_web.js"></script>
+       <script>
+       	$(function(){
+       		$('.rz_jd_more_btn').click(function(){
+       			var str = "查看更多<i>&gt;</i>";
+       			var str2 = "收起<i>&gt;</i>";
+       			var _this =$(this);
+       			if (!_this.hasClass('act')) {
+       				_this.addClass('act');
+       				_this.prev('div').find('.jd_addr_sec2_p2').addClass('act');
+       				_this.html(str2);
+       			} else{
+       				_this.removeClass('act');
+       				_this.prev('div').find('.jd_addr_sec2_p2').removeClass('act');
+       				_this.html(str);
+       			}
+       		});
+       	});
+       </script>
+	</body>
+</html>

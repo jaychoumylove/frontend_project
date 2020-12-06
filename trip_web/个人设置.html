@@ -1,0 +1,150 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="Cache-Control" content="no-cache"/>
+    <meta content="telephone=no" name="format-detection" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no">
+    <meta name="keywords" content="#" />
+    <meta name="description" content="#" />
+    <link href="css/common.css" rel="stylesheet" type="text/css" />
+     <link rel="stylesheet" type="text/css" href="css/trip_web.css">
+    <script type="text/javascript" src="js/jquery-1.8.3.min.js"></script>
+    <script src="js/common.js"></script>
+    <script type="text/javascript" src="js/swiper.min.js"></script>
+    <script type="text/javascript" src="js/date.js" ></script>
+    <script type="text/javascript" src="js/iscroll.js" ></script>
+    
+    <!--三级联动-->
+    <script src="js/LAreaData1.js"></script>
+    <script src="js/LAreaData2.js"></script>
+    <script src="js/LArea.js"></script>
+    <title>个人设置</title>
+</head>
+<body>
+<div class="xweb">
+    <!--公共头部 start-->
+    <div class="f_tit01 f_tit02">
+        <a href="javascript:history.back(-1)" class="f_tit01L"><img src="img/return.png" alt="返回"></a>
+        个人设置
+			      <span class="idx_lspan">
+		              <img src="img/menu.png" alt="菜单" class="idx_menu01">
+		              <img src="img/menu_close.png" alt="关闭菜单" class="idx_menu02">
+		          </span>
+    </div>
+    <!--公共头部 end-->
+
+    <!--公共菜单 start-->
+    <div id="menu"></div>
+    <!--公共菜单 end-->
+
+    <div class="trip_main">
+        <!--个人设置-->
+        <div class="grsz">
+            <ul class="newsul clearfix">
+                <li class="newsul_li"><a href="#">个人资料</a></li>
+                <li><a href="#">密码修改</a></li>
+                <li><a href="#">手机修改</a></li>
+                <li><a href="#">邮箱修改</a></li>
+            </ul>
+            <div class="gz-h1">
+                <label for="ft"><span><img src="img/zt_sz_1.png" alt="个人资料" id="ms"/></span></label>
+                <div class="gz-h1y clearfix">
+                    <p>支持.jpg、.gif、.png格式，保存后生效！</p>
+                    <input type="file" value="上传头像" id="ft">
+                    <label for="ft">上传头像</label>
+                </div>
+            </div>
+            <div class="gz-h2 clearfix">
+                <i class="size"><span class="color">*</span>用户名：</i>
+                <div class="gz-h2r clearfix"><input type="text"/>
+                    <p>昵称要求为4-16个字符，支持中文、英文、数字、“_”、“-”</p>
+                </div>
+            </div>
+            <div class="gz-h2 clearfix">
+                <i class="size"><span class="color">*</span>姓名：</i>
+                <div class="gz-h2r"><input type="text"/>
+                    <p>请输入您的真实姓名</p>
+                </div>
+            </div>
+            <div class="lie clearfix"><i class="size">生日：</i><input  id="beginTime" class="kbtn" /></div>
+            <div id="datePlugin"></div>
+            <div class="gz-h3 clearfix">
+                <i class="size"><span class="color">*</span>性别：</i>
+                <div class="select">
+                    <span class="placeholder"></span>
+                    <ul>
+                        <li>男</li>
+                        <li>女</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="gz-h4 clearfix">
+                <i class="size"><span class="color">*</span>手机号：</i>
+                <input type="text"/>
+                <a href="#">修改号码</a>
+            </div>
+            <div class="gz-h5 clearfix">
+                <i class="size">邮箱：</i>
+                <input type="text"/>
+                <a href="#">修改邮箱</a>
+            </div>
+            <div class="gz-h6 clearfix">
+                <i class="size"><span class="color">*</span>常住地：</i>
+                <div class="gz-h6h">
+                <div class="content-block">
+		              <input id="demo1" type="text" placeholder="请选择地址" readonly>
+		              <input id="value1" type="hidden" value="20,234,504">
+	              </div>
+                    <textarea type="text" value="请输入详细地址" onfocus="if (value =='请输入详细地址'){value =''}"onblur="if (value ==''){value='请输入详细地址'}"></textarea>
+                </div>
+
+            </div>
+            <div class="gz-h7 clearfix">
+                <a class="a1" href="#">保存</a><a class="a2" href="#">取消</a>
+            </div>
+
+        </div>
+        <!--个人设置end-->
+
+    </div>
+
+</div>
+<script src="js/trip_web.js"></script>
+<script type="text/javascript">
+    $(function(){
+        $('#beginTime').date();
+        $('#endTime').date({theme:"datetime"});
+    });
+    
+    /*省市区三级联动*/
+  $(function(){
+      var area1 = new LArea();
+      area1.init({
+        'trigger': '#demo1', //触发选择控件的文本框，同时选择完毕后name属性输出到该位置
+        'valueTo': '#value1', //选择完毕后id属性输出到该位置
+        'keys': {
+          id: 'id',
+          name: 'name'
+        }, //绑定数据源相关字段 id对应valueTo的value属性输出 name对应trigger的value属性输出
+        'type': 1, //数据源类型
+        'data': LAreaData //数据源
+      });
+      area1.value=[1,13,3];//控制初始位置，注意：该方法并不会影响到input的value
+      var area2 = new LArea();
+      area2.init({
+        'trigger': '#demo2',
+        'valueTo': '#value2',
+        'keys': {
+          id: 'value',
+          name: 'text'
+        },
+        'type': 2,
+        'data': [provs_data, citys_data, dists_data]
+      });
+  })
+</script>
+
+
+</body>
+</html>

@@ -1,0 +1,87 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="UTF-8"/>
+<meta http-equiv="Cache-Control" content="no-cache"/>
+<meta content="telephone=no" name="format-detection" />
+<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no">
+<meta name="keywords" content="#" />
+<meta name="description" content="#" />
+<link rel="stylesheet" type="text/css" href="css/trip_web.css">
+<script type="text/javascript" src="js/jquery-1.8.3.min.js"></script>
+<script src="js/common.js"></script>
+<script src="js/swiper.min.js"></script>
+<!--省市级三级联动-->
+<script src="js/Popt.js"></script>  
+<script src="js/cityJson.js"></script>
+<script src="js/citySet.js"></script>
+<title>增加地址</title>
+	</head>
+	<body class="bdbg">
+       <div class="xweb">
+		      <!--公共头部 start-->
+		      <div class="f_tit01 f_tit02">
+				  <a href="javascript:history.back(-1)" class="f_tit01L"><img src="img/return.png" alt="返回"></a>
+				    个人设置					
+			      <span class="idx_lspan">
+		              <img src="img/menu.png" alt="菜单" class="idx_menu01">
+		              <img src="img/menu_close.png" alt="关闭菜单" class="idx_menu02">
+		          </span>
+			  </div>
+		      <!--公共头部 end-->
+		      
+		      <!--公共菜单 start-->
+	          <div id="menu"></div>
+              <!--公共菜单 end-->
+              
+              <div class="trip_main trip_main02">
+              	 <div class="trip_main_a">
+              	   <ul>
+              	     <li><a href="#">密码修改</a></li>
+              	     <li><a href="#">手机修改</a></li>
+              	     <li><a href="#">邮箱修改</a></li>
+              	     <li class="background"><a href="#">收货地址</a></li>
+              	     <div class="clearfix"></div>
+              	   </ul>
+              	 </div>
+              	<div class="Added">
+              	    <h2>新增收货地址</h2>
+              	    <div class="receipt">
+              	      <span class="a1"><i>*</i>收货地：</span>
+<!--
+              	      <select>
+              	        <option>请依次选择省/市/区</option>
+              	      </select>
+-->
+              	      <div class="city">
+	                        <input type="text" id="city" placeholder="请依次选择省/市/区" />
+	                        <img src="img/sel_down.png" alt="选择">
+                      </div>
+                      <textarea class="content" placeholder="请输入详细地址"></textarea>
+              	    </div>
+              	    <div class="mailbox">
+              	      <span class="a1"><i>*</i>邮编：</span>
+              	      <input type="text">
+              	    </div>
+              	    <div class="recipient">
+              	      <span class="a1"><i>*</i>收件人：</span>
+              	      <input type="text">
+              	    </div>
+              	    <div class="phone">
+              	      <span class="a1"><i>*</i>手机号：</span>
+              	      <input type="text" placeholder="手机号码、电话号码必须填一项">
+              	    </div>
+              	    <div class="telephone">
+              	      <span class="a1"><i>*</i>电话：</span>
+              	      <input class="ipt1" type="text" placeholder="区号"><span class="span1">-</span><input class="ipt2" type="text" placeholder="座机号码"><span class="span2">-</span><input class="ipt1" type="text" placeholder="分机">
+              	    </div>
+              	</div>
+              	<div class="next save"><input type="button" value="保存"></div>
+              </div>
+              
+             
+       </div>
+       
+       <script src="js/trip_web.js"></script>
+	</body>
+</html>

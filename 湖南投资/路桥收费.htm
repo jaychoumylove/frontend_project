@@ -1,0 +1,91 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+     <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+    <meta http-equiv="Content-Type" content="text/x-component" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    {tryine_classseo}
+    <link rel="icon" href="/favicon.ico" mce_href="favicon.ico" type="image/x-icon"/>
+    <link rel="stylesheet" type="text/css" href="/temp/model/css/pc.css"/>
+    <script type="text/javascript" src="/temp/model/js/jquery-1.8.3.min.js"></script>
+    <script type="text/javascript" src="/temp/model/js/jquery.SuperSlide.2.1.1.js"></script>
+    <script type="text/javascript" src="/temp/model/js/idx.js"></script>
+    <title>{tryine:column.cl_name}</title>
+</head>
+<body>
+<div class="header">
+    <div class="idx-h1">
+         {tryine_com}
+    </div>
+    {tryine:include file="/temp/model/pub/top.htm"}
+</div>
+<div class="cyqy">
+    <div class="gyys-n">
+        <div class="gyys-n1">
+            <div  class="gyys-n1-l">
+               <a href="/"><img src="/temp/model/images/gsjj-sy.png" alt="首页" title="首页"/>首页</a> <img src="/temp/model/images/jt_03.png" alt="箭头"/> <a href="/gszl/gszc/">公司治理</a><img src="/temp/model/images/jt_03.png" alt="箭头"/> <i>{tryine:column.cl_name}</i>
+            </div>
+            <div  class="gyys-n1-r">
+               {tryine:include file="/temp/model/pub/left1.htm"}
+            </div>
+        </div>
+        <div class="cyqy-n2">
+            <div class="slideGroup">
+              <div class="parHd">
+                  {tryine:include file="/temp/model/pub/left2.htm"}
+                   </div>
+              <div class="parBd">
+              {tryine:loop table="dbo.Cy_Column" field="cl_id,cl_title_sub,cl_con" where="cl_xs=1 and parentid in ({tryine:column.cl_id})" order="cl_id asc" }     
+                <div class="parHd-dt">
+                  <div class="cyqy-n2b">
+                <h1>{field.cl_title_sub}</h1>
+                <p>{field.cl_con}</p>
+            </div>
+                  <div class="cyqy-n2c">
+                <div  class="slideBox">
+                    <div class="bd">
+                        <ul>
+                           {tryine:loopsql sql="select id,savepath,filename,n_tag,p1,p6,p2,p3,p8,thumbnail,newscontentsub,fileexname,btitle=CASE WHEN
+                       LEN(p8)>30 THEN SUBSTRING(p8,0,30)+'...' ELSE title END,subtitle=CASE WHEN
+                       LEN(newscontentsub)>120 THEN SUBSTRING(newscontentsub,0,120)+'...' ELSE newscontentsub END,title ,time=SUBSTRING(CONVERT(varchar(12),writertime,23),1,15) from Cy_News where classid in ({field.cl_id}) order by rootID asc"}
+                            <li><a href="javascript:void(0)"><img src="{sqlfield.thumbnail}" alt="{sqlfield.title}"  title="{sqlfield.title}" /></a></li>
+                           {/tryine:loopsql}
+                        </ul>
+                    </div>
+                    <!-- 下面是前/后按钮代码，如果不需要删除即可 -->
+                    <a class="zfprev" href="javascript:void(0)"></a>
+                    <a class="zfnext" href="javascript:void(0)"></a>
+
+                </div>
+            </div>
+                </div>
+                 {/tryine:loop}
+              </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="footer">
+    {tryine_wap_button}
+</div>
+<div class="ycfdl">
+    <a class="shang" href="#"><img src="/temp/model/images/ycfd-s_03.png" /></a>
+</div>
+
+<!--返回顶部-->
+<script>
+    jQuery(document).ready(function ($) {
+        $('.shang').click(function () {
+            $('html,body').animate({ scrollTop: '0px' }, 1000);
+        });
+    })
+</script>
+
+<script type="text/javascript">
+    //    <!--轮播-->
+    //    选项卡
+    jQuery(".slideGroup").slide({ titCell: ".parHd li", mainCell: ".parBd", trigger: "click" });
+    jQuery(".slideBox").slide({ mainCell: ".bd ul", autoPlay: false, prevCell: ".zfprev", nextCell: ".zfnext" });
+</script>
+</body>
+</html>

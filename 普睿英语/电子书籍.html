@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=yes">
+		<meta name="description" content="" />
+		<meta name="keywords" content="" />
+		<link rel="stylesheet" href="css/jquery.selectlist.css" />
+		<link href="css/swiper.min.css" rel="stylesheet" />
+		<link href="css/main.css" rel="stylesheet" />
+		<script src="js/jquery-1.7.2.min.js" ></script>
+		<script src="js/jquery.selectlist.js"></script>
+		<script src="js/swiper.min.js"></script>
+		<script src="js/common.js"></script>
+		<title>电子书籍</title>
+	</head>
+	<body>
+		<div id="head"></div>
+		<div class="bread_crumbs_wrap">
+			<div class="bread_crumbs">
+				<span>当前位置：</span><a href="" title="">首页</a> - <a href="" title="">电子书籍</a>
+			</div>
+		</div>
+		<div class="container1">
+			<div class="book_section1">
+				<ul class="cf">
+					<li class="act"><a href="电子书籍.html" title="">电子书籍</a></li>
+					<li><a href="纸质书籍.html" title="">纸质书籍</a></li>
+				</ul>
+			</div>
+			<div class="book_section2 cf">
+				<ul class="book_section2_ul1">
+					<li>
+						<div class="b_ul1_div">
+							<img src="images/dzsj_list1_pic1.jpg" alt=""/>
+							<div class="b_s2_ul1_libg">
+								<a href="" title="">点击阅读</a>
+							</div>
+						</div>
+						<h3>狂奔吧单词第一版</h3>
+						<p>当你还在祈祷速成的奇迹，那么，你错过的不是一路崎岖，而是自信与灿烂。虽然终点永远还在前方，但也请不要轻易停下你的脚步</p>
+					</li>
+					<li>
+						<div class="b_ul1_div">
+							<img src="images/dzsj_list1_pic2.jpg" alt=""/>
+							<div class="b_s2_ul1_libg">
+								<a href="" title="">点击阅读</a>
+							</div>
+						</div>
+						<h3>狂奔吧单词第一版</h3>
+						<p>当你还在祈祷速成的奇迹，那么，你错过的不是一路崎岖，而是自信与灿烂。虽然终点永远还在前方，但也请不要轻易停下你的脚步</p>
+					</li>
+					<li class="last">
+						<div class="b_ul1_div">
+							<img src="images/dzsj_list1_pic3.jpg" alt=""/>
+							<div class="b_s2_ul1_libg">
+								<a href="" title="">点击阅读</a>
+							</div>
+						</div>
+						<h3>狂奔吧单词第一版</h3>
+						<p>当你还在祈祷速成的奇迹，那么，你错过的不是一路崎岖，而是自信与灿烂。虽然终点永远还在前方，但也请不要轻易停下你的脚步</p>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<div id="foot"></div>
+		
+		<script type="text/javascript">
+			$(function(){
+				$('.book_section2_ul1 li').hover(function(){
+					$(this).find('.b_s2_ul1_libg').stop().animate({'top':'0'},'slow');
+				},function(){
+					$(this).find('.b_s2_ul1_libg').stop().animate({'top':'-512px'},'slow');
+				})
+			});
+		</script>
+	</body>
+</html>

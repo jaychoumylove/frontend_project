@@ -1,0 +1,24 @@
+.vjs-play-control.vjs-paused:before{
+	background: url(../img/play.png) no-repeat;
+	background-position: 0 3px;
+}
+.vjs-play-control.vjs-playing:before{
+	background: url(../img/stop.png) no-repeat;
+	background-position: 0 3px;
+}
+.vjs-vol-3:before{
+	background: url(../img/volume_open.png) no-repeat;
+	background-position: 10px 3px;
+}
+.vjs-vol-0:before{
+	background: url(../img/volume_close.png) no-repeat;
+	background-position: 10px 3px;
+}
+.vjs-icon-fullscreen-enter:before, .video-js .vjs-fullscreen-control:before{
+	background: url(../img/fullscreen.png) no-repeat;
+	background-position: 0 3px;
+}
+.vjs-icon-fullscreen-exit:before, .video-js.vjs-fullscreen .vjs-fullscreen-control:before{
+	background: url(../img/fullscreen_exit.png) no-repeat;
+	background-position: 0 3px;
+}
